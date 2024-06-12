@@ -16,13 +16,13 @@
     </header>
     <main>
         <section class="sectionForm">
-            <form action method="get">
+            <form id="loginForm" action method="get">
                 <h2>Iniciar Sesión</h2>
                 <div>
-                    <input class="entry" type="email" placeholder="Email" id="email" name="email">
+                    <input class="entry" type="email" placeholder="Email" id="email" name="email" required>
                 </div>
                 <div>
-                    <input class="entry" type="password" placeholder="Contraseña" id="contrasena" name="contrasena">
+                    <input class="entry" type="password" placeholder="Contraseña" id="password" name="password" required>
                 </div>
                 <div>
                     <input class="boton" type="submit" value="Iniciar Sesión">
@@ -33,5 +33,7 @@
             </form>
         </section>
     </main>
+
+    <script src="../assets/js/validar_inicio.js"></script>
 </body>
 </html>

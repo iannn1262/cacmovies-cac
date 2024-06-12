@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <a class="anclaLogo" href="#">
+        <a class="anclaLogo" href="#" onclick="showLoginRegister(); return false;">
             <i class="fa fa-film"></i>
             <span>CAC-MOVIES</span>
         </a>
@@ -25,11 +25,14 @@
                 <li class="listaItem">
                     <a class="linkNav botonNegro" href="./pages/login.html">Iniciar Sesión</a>
                 </li>
+                <li class="listaItem" id="API Pokemón">
+                    <a class="linkNav Api" href="pages/index_api2.html">API</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main id="main" class="main">
+    <main class="main">
         <section class="sectionPrincipal">
             <h1 class="tituloPrincipal">
                 Películas y series ilimitadas <br>en un solo lugar
@@ -37,7 +40,7 @@
             <h2 class="subtituloPrincipal">
                 Disfruta donde quieras. <br>Cancela en cualquier momento.
             </h2>
-            <a class="botonRegistrarse" href="#">Registrate</a>
+            <a class="botonRegistrarse" href="/pages/registro.html">Registrate</a>
         </section>
 
         <section class="buscadorPrincipal">
@@ -50,9 +53,9 @@
 
         <hr>
 
-        <section id="tendencias" class="peliculasTendencia">
+        <section class="peliculasTendencia" id="tendencias">
             <h3 class="tituloSection">Las tendencias de hoy</h3>
-            <div class="peliculas" id="tendenciasContainer">
+            <div class="peliculas">
                 <div class="peliculas">
                     <a href="pages/info.html">
                         <div class="pelicula">
@@ -142,7 +145,7 @@
 
         <section class="peliculasAclamadas">
             <h3 class="tituloSection">Las más aclamadas</h3>
-            <div class="aclamadas" id="aclamadasContainer">
+            <div class="aclamadas">
                 <div class="peliculaItem">
                     <img class="imgAclamada" src="assets/img/peliculas/wages.jpg" alt="The Wages of Fear" loading="lazy">
                 </div>
@@ -190,5 +193,8 @@
             <img src="assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
         </a>
     </footer>
+
+    <script src="js/pie.js"></script>
+    <script src="js/saludo.js"></script>
 </body>
 </html>

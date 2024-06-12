@@ -16,21 +16,21 @@
     </header>
     <main>
         <section class="sectionForm">
-            <form action method="get">
+            <form id="loginForm" action method="get">
                 <h2>Registro</h2>
                 <div>
-                    <input class="entry" type="text" placeholder="Nombre" id="nombre" name="nombre">
+                    <input class="entry" type="text" placeholder="Nombre" id="name" name="nombre" required>
                 </div>
                 <div>
-                    <input class="entry" type="text" placeholder="Apellido" id="apellido" name="apellido">
+                    <input class="entry" type="text" placeholder="Apellido" id="lastName" name="apellido" required>
                 </div>
                 <div>
-                    <input class="entry" type="email" placeholder="Email" id="email" name="email">
+                    <input class="entry" type="email" placeholder="Email" id="email" name="email" required>
                 </div>
                 <div>
-                    <input class="entry" type="password" placeholder="Contraseña" id="contrasena" name="contrasena">
+                    <input class="entry" type="password" placeholder="Contraseña" id="password" name="contrasena" required>
                 </div>
-                <div>
+                <!-- <div>
                     <input class="entry" type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="fechaNacimiento" name="fechaNacimiento">
                 </div>
                 <div>
@@ -47,9 +47,9 @@
                         <option value="UY">Uruguay</option>
                         <option value="VE">Venezuela</option>
                     </select>
-                </div>
+                </div> -->
                 <div class="terminos">
-                    <input class="check" type="checkbox" id="terminos">
+                    <input class="check" type="checkbox" id="termsAccepted" required>
                     <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
                 </div>
                 <div>
@@ -61,5 +61,7 @@
             </form>
         </section>
     </main>
+
+    <script src="../assets/js/validar.js"></script>
 </body>
 </html>
